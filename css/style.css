@@ -110,19 +110,19 @@ body {
   opacity: 0;
 }
 
-.social__list {
+.social-list {
   display: flex;
   align-items: center;
   gap: 44px;
   font-size: 0;
 }
 
-.social__link {
+.social-list__link {
   display: inline-block;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.social__link:hover {
+.social-list__link:hover {
   color: #00a9bd;
   transform: scale(1.25);
 }
