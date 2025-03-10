@@ -38,6 +38,12 @@
   font-display: swap;
 }
 
+button {
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
 .container {
   max-width: 1740px;
   padding: 0 10px;
@@ -125,4 +131,93 @@ body {
 .social-list__link:hover {
   color: #00a9bd;
   transform: scale(1.25);
+}
+
+.header__content {
+  background-image: url('../images/header-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: 'Raleway-Bold', sans-serif;
+  font-weight: 700;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.header__content-inner {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 124px);
+  text-align: center;
+}
+
+.header__title {
+  margin-top: 18vh;
+  margin-bottom: 10px;
+  font-size: 128px;
+  text-transform: uppercase;
+}
+
+.booking {
+  padding: 22px 30px;
+  font-family: 'Raleway-Bold', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1;
+  color: #fff;
+  background-color: #00a9bd;
+  text-transform: uppercase;
+  border-radius: 30px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.header__booking {
+  margin-bottom: auto;
+  align-self: center;
+}
+
+.booking:hover {
+  color: #000;
+  background-color: #ffe093;
+}
+
+.header__info-list {
+  display: flex;
+  justify-content: center;
+  /* gap: 302px; */
+  margin-bottom: 11vh;
+}
+
+.header__info-item:first-child {
+  margin-right: 338px;
+}
+
+.header__info-item:last-child {
+  margin-left: 302px;
+}
+
+.header__info-num {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+  margin-bottom: 10px;
+  font-size: 32px;
+  text-align: left;
+}
+
+.header__info-num::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  background-image: url('../images/icon-check.svg');
+}
+
+.header__info-text {
+  font-family: 'Raleway-Medium', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
 }
