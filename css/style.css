@@ -186,24 +186,12 @@ body {
 
 .header__info-list {
   display: flex;
-  /* justify-content: center; */
-  /* gap: 302px; */
-
   justify-content: space-between;
   gap: 30px;
   max-width: 1180px;
   width: 100%;
-
   margin-bottom: 11vh;
 }
-
-/* .header__info-item:first-child {
-  margin-right: 338px;
-}
-
-.header__info-item:last-child {
-  margin-left: 302px;
-} */
 
 .header__info-num {
   position: relative;
