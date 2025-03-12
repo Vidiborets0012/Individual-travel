@@ -38,6 +38,12 @@
   font-display: swap;
 }
 
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 button {
   padding: 0;
   border: none;
@@ -159,9 +165,7 @@ body {
 .header__content-inner {
   display: flex;
   flex-direction: column;
-
   align-items: center;
-
   min-height: calc(100vh - 124px);
   text-align: center;
 }
@@ -259,4 +263,70 @@ body {
   background-repeat: no-repeat;
   background-position: top left;
   background-size: 124px 77px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  counter-reset: counter;
+}
+
+.gallery__item {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  height: 587px;
+  padding: 0 30px 26px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 25px;
+}
+
+.gallery__item:nth-child(n + 10)::before {
+  content: counter(counter);
+}
+
+.gallery__item::before {
+  content: '0' counter(counter);
+  counter-increment: counter;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 95px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.gallery__item::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 5;
+  transform: translate(-50%, -50%);
+  width: 178px;
+  height: 115px;
+  background-image: url('../images/decor-oval.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery__item-box {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 74px;
+}
+
+.gallery__item-title {
+  max-width: 351px;
+  font-family: 'Raleway-Bold', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  text-transform: uppercase;
+  color: #fff;
 }
