@@ -44,6 +44,18 @@ button {
   cursor: pointer;
 }
 
+.section-indent {
+  margin-bottom: 120px;
+}
+
+.title {
+  font-family: 'Raleway-Medium', sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  text-transform: uppercase;
+  color: #000;
+}
+
 .container {
   max-width: 1740px;
   padding: 0 10px;
@@ -220,4 +232,31 @@ body {
   font-family: 'Raleway-Medium', sans-serif;
   font-weight: 500;
   font-size: 24px;
+}
+
+.travel-info__top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 62px;
+}
+
+.travel-info__title span {
+  display: inline-block;
+  padding-bottom: 8px;
+  background-image: url('../images/decor-underline.svg');
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: contain;
+}
+
+.travel-info__text {
+  padding: 0 0 21px 147px;
+  max-width: 760px;
+  font-size: 24px;
+  color: #000;
+  text-transform: uppercase;
+  background-image: url('../images/decor-arrow.svg');
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 124px 77px;
 }
