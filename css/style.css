@@ -398,3 +398,29 @@ body {
 .accommodation__box--paired {
   grid-column: span 2;
 }
+
+.accommodation__box-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.accommodation__box-bg {
+  background-repeat: no-repeat;
+  background-position: left top 18px;
+  background-size: 529px 342px;
+}
+
+.accommodation__box-details {
+  display: flex;
+  align-items: flex-end;
+  background-repeat: no-repeat;
+  background-position: top 48px;
+  background-size: contain;
+}
+
+.accommodation__box-link {
+  padding: 16px 38px;
+  margin-left: 40px;
+  border: 1px solid #000;
+  border-radius: 30px;
+}
