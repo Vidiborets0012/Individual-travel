@@ -352,3 +352,13 @@ body {
   text-transform: uppercase;
   color: #fff;
 }
+
+.accommodation__title {
+  margin-bottom: 60px;
+}
+
+.accommodation__inner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
