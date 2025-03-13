@@ -62,6 +62,15 @@ button {
   color: #000;
 }
 
+.title span {
+  display: inline-block;
+  padding-bottom: 8px;
+  background-image: url('../images/decor-underline.svg');
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: contain;
+}
+
 .container {
   max-width: 1740px;
   padding: 0 10px;
@@ -244,14 +253,14 @@ body {
   margin-bottom: 62px;
 }
 
-.travel-info__title span {
+/* .travel-info__title span {
   display: inline-block;
   padding-bottom: 8px;
   background-image: url('../images/decor-underline.svg');
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: contain;
-}
+} */
 
 .travel-info__text {
   padding: 0 0 21px 147px;
