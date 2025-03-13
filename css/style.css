@@ -281,7 +281,9 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  color: #ffe093;
   border-radius: 25px;
+  transition: color 0.5s ease;
 }
 
 .gallery__item:nth-child(n + 10)::before {
@@ -300,7 +302,18 @@ body {
   color: #fff;
 }
 
-.gallery__item::after {
+.gallery__item-decor {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.gallery__item:hover {
+  color: #00a9bd;
+}
+
+/* .gallery__item::after {
   content: '';
   position: absolute;
   top: 50%;
@@ -313,7 +326,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
+} */
 
 .gallery__item-box {
   display: flex;
