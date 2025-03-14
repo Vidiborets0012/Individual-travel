@@ -295,10 +295,6 @@ body {
   transition: color 0.5s ease;
 }
 
-.gallery__item:nth-child(n + 10)::before {
-  content: counter(counter);
-}
-
 .gallery__item::before {
   content: '0' counter(counter);
   counter-increment: counter;
@@ -309,6 +305,10 @@ body {
   font-size: 95px;
   text-transform: uppercase;
   color: #fff;
+}
+
+.gallery__item:nth-child(n + 10)::before {
+  content: counter(counter);
 }
 
 .gallery__item-decor {
@@ -423,4 +423,11 @@ body {
   margin-left: 40px;
   border: 1px solid #000;
   border-radius: 30px;
+  transition: color 0.3s ease, background-color 0.3s ease, border 0.3s ease;
+}
+
+.accommodation__box-link:hover {
+  color: #fff;
+  background-color: #00a9bd;
+  border: 1px solid #00a9bd;
 }
