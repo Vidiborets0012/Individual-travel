@@ -481,3 +481,44 @@ body {
 .swiper-slide__img {
   border-radius: 25px;
 }
+
+.questions {
+  padding: 75px 0 110px;
+  background-color: rgba(182, 232, 238, 0.5);
+}
+
+.questions__title {
+  margin-bottom: 36px;
+  text-align: center;
+}
+
+.qustions__inner {
+  padding-left: 36px;
+}
+
+.questions__content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-left: 250px;
+  background-image: url('../images/decor-questions.svg');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 203px 176px;
+}
+
+.questions__content-box {
+  max-width: 1140px;
+}
+
+.questions__subtitle {
+  margin-bottom: 16px;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.questions__text {
+  font-family: 'Inter-Regular', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
