@@ -445,12 +445,12 @@ body {
 }
 
 .swiper-button-prev {
-  background-image: url('../images/arrow-prev.svg');
+  /* background-image: url('../images/arrow-prev.svg'); */
   left: 10px;
 }
 
 .swiper-button-next {
-  background-image: url('../images/arrow-next.svg');
+  /* background-image: url('../images/arrow-next.svg'); */
   right: 10px;
 }
 
