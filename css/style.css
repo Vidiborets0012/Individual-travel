@@ -331,6 +331,14 @@ body {
 
 .gallery__item-link {
   align-self: flex-start;
+  color: #fff;
+  transition: color 0.5s ease;
+}
+
+.gallery__item-link:hover,
+.gallery__item-link:focus,
+.gallery__item-link:active {
+  color: #00a9bd;
 }
 
 .accommodation__title {
