@@ -329,6 +329,10 @@ body {
   color: #fff;
 }
 
+.gallery__item-link {
+  align-self: flex-start;
+}
+
 .accommodation__title {
   margin-bottom: 60px;
   text-align: center;
