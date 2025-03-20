@@ -492,7 +492,7 @@ body {
   flex-direction: column;
   gap: 30px;
   padding-left: 250px;
-  background-image: url('../images/decor-questions.svg');
+  /* background-image: url('../images/decor-questions.svg'); */
   background-repeat: no-repeat;
   background-position: left center;
   background-size: 203px 176px;
