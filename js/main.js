@@ -9,3 +9,16 @@ const swiper = new Swiper('.swiper', {
   },
 
 });
+
+const items = document.querySelectorAll('.tours__item');
+
+items.forEach(element => {
+
+    element.addEventListener('click', () => {
+
+        items.forEach(el => el.classList.remove('tours__item--active'));
+
+        element.classList.add('tours__item--active')
+    });
+
+});

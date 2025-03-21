@@ -31,6 +31,14 @@
 }
 
 @font-face {
+  font-family: 'Raleway-SemiBold';
+  src: url('../fonts/Raleway-SemiBold.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
   font-family: 'Raleway-Bold';
   src: url('../fonts/Raleway-Bold.woff2') format('woff2');
   font-style: normal;
@@ -512,4 +520,114 @@ body {
   font-family: 'Inter-Regular', sans-serif;
   font-weight: 400;
   font-size: 20px;
+}
+
+.tours__title {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.tours__list {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  gap: 35px;
+}
+
+.tours__item {
+  position: relative;
+  width: 180px;
+  cursor: pointer;
+  color: #fff;
+  overflow: hidden;
+}
+
+.tours__img {
+  object-fit: cover;
+  border-radius: 35px;
+}
+
+.tours__item.tours__item--active {
+  width: 860px;
+}
+
+.tours__item-content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 0 0 35px 35px;
+}
+
+.tours__item--active .tours__item-content {
+  background: linear-gradient(180deg, rgba(48, 48, 48, 0) 0%, #000 100%);
+}
+
+.tours__item-title {
+  margin-bottom: 14px;
+  font-family: 'Raleway-SemiBold', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  opacity: 0;
+}
+
+.tours__item--active .tours__item-title {
+  opacity: 1;
+}
+
+.tours__info-list {
+  display: flex;
+  align-items: center;
+  gap: 55px;
+  padding: 0 23px;
+  margin-bottom: 24px;
+  white-space: nowrap;
+}
+
+.tours__item--active .tours__info-list {
+  padding: 0 34px;
+}
+
+.tours__info-flag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 134px;
+  height: 77px;
+  border-radius: 35px;
+  backdrop-filter: blur(7px);
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.tours__info-item--alignment {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  flex-grow: 1;
+}
+
+.tours__info-date,
+.tours__info-price {
+  position: relative;
+  padding-left: 47px;
+  font-family: 'Raleway-Medium', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.tours__info-date::before,
+.tours__info-price::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 34px;
+  height: 34px;
+  background-image: url('../images/icon-check.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
