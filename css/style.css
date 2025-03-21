@@ -105,9 +105,7 @@ body {
   transition: color 0.3s ease;
 }
 
-.logo:hover,
-.logo:focus,
-.logo:active {
+.logo:hover {
   color: #00a9bd;
 }
 
@@ -530,7 +528,6 @@ body {
 .tours__list {
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
   gap: 35px;
 }
 
