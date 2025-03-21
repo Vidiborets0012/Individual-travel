@@ -100,12 +100,12 @@ body {
   padding: 6px 0 20px;
 }
 
-.logo {
+.header__logo {
   font-size: 0;
   transition: color 0.3s ease;
 }
 
-.logo:hover {
+.header__logo:hover {
   color: #00a9bd;
 }
 
@@ -156,16 +156,19 @@ body {
 .social-list {
   display: flex;
   align-items: center;
-  gap: 44px;
   font-size: 0;
 }
 
-.social-list__link {
+.header__social-list {
+  gap: 44px;
+}
+
+.header__social-link {
   display: inline-block;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.social-list__link:hover {
+.header__social-link:hover {
   color: #00a9bd;
   transform: scale(1.25);
 }
