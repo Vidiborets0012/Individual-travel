@@ -583,19 +583,6 @@ body {
   opacity: 1;
 }
 
-/* .tours__info-list {
-  display: flex;
-  align-items: center;
-  gap: 55px;
-  padding: 0 23px;
-  margin-bottom: 24px;
-  white-space: nowrap;
-}
-
-.tours__item--active .tours__info-list {
-  padding: 0 34px;
-} */
-
 .tours__info {
   display: flex;
   align-items: center;
@@ -621,28 +608,12 @@ body {
   background: rgba(255, 255, 255, 0.7);
 }
 
-/* .tours__info-item--alignment {
-  display: flex;
-  justify-content: space-between;
-  gap: 100px;
-  flex-grow: 1;
-} */
-
 .tours__info-list {
   display: flex;
   justify-content: space-between;
   gap: 100px;
   flex-grow: 1;
 }
-
-/* .tours__info-date,
-.tours__info-price {
-  position: relative;
-  padding-left: 47px;
-  font-family: 'Raleway-Medium', sans-serif;
-  font-weight: 500;
-  font-size: 24px;
-} */
 
 .tours__info-item {
   position: relative;
@@ -651,21 +622,6 @@ body {
   font-weight: 500;
   font-size: 24px;
 }
-
-/* .tours__info-date::before,
-.tours__info-price::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 34px;
-  height: 34px;
-  background-image: url('../images/icon-check.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-} */
 
 .tours__info-item::before {
   content: '';
@@ -709,24 +665,25 @@ body {
 }
 
 .footer__address {
-  margin-bottom: 27px;
-  padding-left: 8px;
+  margin-bottom: 55px;
+  /* padding-left: 8px; */
 }
 
 .footer__address-text {
   display: inline-block;
   margin-bottom: 16px;
+  padding-left: 8px;
   font-family: 'Raleway-Medium', sans-serif;
   font-weight: 500;
 }
 
-address {
+.address {
   font-style: normal;
 }
 
-.footer__phone {
-  display: inline-block;
-  margin-bottom: 55px;
+.address__text {
+  margin-bottom: 27px;
+  padding-left: 8px;
 }
 
 .footer__social-list {
