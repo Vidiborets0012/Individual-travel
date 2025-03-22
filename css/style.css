@@ -660,13 +660,16 @@ body {
   font-weight: 500;
 }
 
-.footer__menu-item + .footer__menu-item {
+/* .footer__menu-item + .footer__menu-item {
   margin-top: 20px;
+} */
+
+.footer__menu-item:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .footer__address {
   margin-bottom: 55px;
-  /* padding-left: 8px; */
 }
 
 .footer__address-text {
@@ -691,6 +694,10 @@ body {
   gap: 50px;
 }
 
-.footer__links-item + .footer__links-item {
+/* .footer__links-item + .footer__links-item {
   margin-top: 20px;
+} */
+
+.footer__links-item:not(:last-child) {
+  margin-bottom: 20px;
 }
