@@ -583,7 +583,7 @@ body {
   opacity: 1;
 }
 
-.tours__info-list {
+/* .tours__info-list {
   display: flex;
   align-items: center;
   gap: 55px;
@@ -594,12 +594,26 @@ body {
 
 .tours__item--active .tours__info-list {
   padding: 0 34px;
+} */
+
+.tours__info {
+  display: flex;
+  align-items: center;
+  gap: 55px;
+  padding: 0 23px;
+  margin-bottom: 24px;
+  white-space: nowrap;
+}
+
+.tours__item--active .tours__info {
+  padding: 0 34px;
 }
 
 .tours__info-flag {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
   width: 134px;
   height: 77px;
   border-radius: 35px;
@@ -607,15 +621,30 @@ body {
   background: rgba(255, 255, 255, 0.7);
 }
 
-.tours__info-item--alignment {
+/* .tours__info-item--alignment {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  flex-grow: 1;
+} */
+
+.tours__info-list {
   display: flex;
   justify-content: space-between;
   gap: 100px;
   flex-grow: 1;
 }
 
-.tours__info-date,
+/* .tours__info-date,
 .tours__info-price {
+  position: relative;
+  padding-left: 47px;
+  font-family: 'Raleway-Medium', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+} */
+
+.tours__info-item {
   position: relative;
   padding-left: 47px;
   font-family: 'Raleway-Medium', sans-serif;
@@ -623,8 +652,22 @@ body {
   font-size: 24px;
 }
 
-.tours__info-date::before,
+/* .tours__info-date::before,
 .tours__info-price::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 34px;
+  height: 34px;
+  background-image: url('../images/icon-check.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+} */
+
+.tours__info-item::before {
   content: '';
   position: absolute;
   left: 0;
