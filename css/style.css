@@ -584,7 +584,8 @@ body {
 
 .swiper-button-prev,
 .swiper-button-next {
-  top: 248px;
+  /* top: 248px; */
+  transform: translateY(-50%);
   margin-top: 0;
   width: 78px;
   height: 28px;
@@ -612,6 +613,10 @@ body {
 
 .swiper-slide__img {
   border-radius: 25px;
+}
+
+.swiper-pagination {
+  display: none;
 }
 
 .questions {
