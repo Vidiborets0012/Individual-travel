@@ -386,7 +386,7 @@ body {
   display: flex;
   align-items: flex-end;
   flex-basis: 560px;
-  min-height: 587px;
+  height: 587px;
   padding: 0 30px 26px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -508,6 +508,7 @@ body {
 .accommodation__box-img {
   width: 100%;
   object-fit: cover;
+  border-radius: 25px;
 }
 
 .accommodation__box-bg {
