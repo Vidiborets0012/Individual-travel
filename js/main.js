@@ -3,6 +3,7 @@ const menu = document.querySelector('.menu');
 
 menuBtn.addEventListener('click', () => {
   menu.classList.toggle('menu--active');
+  menuBtn.blur();
 });
 
 const swiper = new Swiper('.swiper', {
