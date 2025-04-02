@@ -13,6 +13,24 @@
     font-size: 96px;
     margin-bottom: 16px;
   }
+
+  .travel-info__top {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 62px;
+  }
+
+  .travel-info__text {
+    max-width: 670px;
+    align-self: flex-start;
+  }
+
+  .gallery {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
 }
 
 @media (max-width: 980px) {
@@ -120,6 +138,16 @@
 
   .footer__links-item:not(:last-child) {
     margin-bottom: 0;
+  }
+
+  .travel-info__text {
+    padding: 0;
+    max-width: 525px;
+    background-image: none;
+  }
+
+  .gallery__item {
+    min-height: 460px;
   }
 }
 

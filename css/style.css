@@ -374,8 +374,9 @@ body {
 }
 
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr); */
+  display: flex;
   gap: 18px;
   counter-reset: counter;
 }
@@ -384,7 +385,8 @@ body {
   position: relative;
   display: flex;
   align-items: flex-end;
-  height: 587px;
+  flex-basis: 560px;
+  min-height: 587px;
   padding: 0 30px 26px;
   background-repeat: no-repeat;
   background-size: cover;
