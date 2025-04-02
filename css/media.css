@@ -117,6 +117,10 @@
     gap: 8px;
     font-size: 16px;
   }
+
+  .footer__links-item:not(:last-child) {
+    margin-bottom: 0;
+  }
 }
 
 @media (max-width: 420px) {
@@ -147,7 +151,23 @@
     justify-content: flex-start;
   }
 
-  .footer__logo {
+  .footer__menu {
+    width: 100%;
     text-align: right;
+  }
+
+  .footer__inner {
+    position: relative;
+  }
+
+  .footer__logo {
+    position: absolute;
+    left: 0;
+    top: 44px;
+    width: auto;
+  }
+
+  .footer {
+    padding: 20px 0;
   }
 }
