@@ -30,3 +30,23 @@ items.forEach(element => {
     element.classList.add('tours__item--active');
   });
 });
+
+const accordeonTitle = document.querySelectorAll('.accordeon__title');
+
+accordeonTitle.forEach(item => {
+  item.addEventListener('click', () => {
+    const parent = item.parentNode;
+    const accordeonTitleImg = document.querySelector('.accordeon__title-img');
+
+    if (parent.classList.contains('accordeon__item--active')) {
+      parent.classList.remove('accordeon__item--active');
+    } else {
+      accordeonTitle.forEach(element => {
+        element.parentNode.classList.remove('accordeon__item--active');
+      });
+
+      parent.classList.add('accordeon__item--active');
+    }
+    item.blur();
+  });
+});

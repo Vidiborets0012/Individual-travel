@@ -638,34 +638,87 @@ body {
 }
 
 .questions__inner {
-  padding-left: 36px;
+  display: flex;
 }
 
-.questions__content {
+.questions__bg-inner {
+  position: relative;
+  min-width: 287px;
+  transition: transform 0.3s ease;
+}
+
+.questions__bg {
+  position: absolute;
+  left: 36px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 203px;
+  height: 176px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.accordeon {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  padding-left: 250px;
-  /* background-image: url('../images/decor-questions.svg'); */
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: 203px 176px;
-}
-
-.questions__content-box {
   max-width: 1140px;
+  padding-right: 20px;
 }
 
-.questions__subtitle {
+.accordeon__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 140px;
+  width: 100%;
   margin-bottom: 16px;
+  font-family: 'Raleway-Regular';
+  font-weight: 400;
   font-size: 32px;
+  text-align: left;
   text-transform: uppercase;
 }
 
-.questions__text {
-  font-family: 'Inter-Regular', sans-serif;
-  font-weight: 400;
-  font-size: 20px;
+.accordeon__title-img {
+  flex-shrink: 0;
+  color: #ffe093;
+  transition: color 0.3s ease;
+}
+
+.accordeon__title:hover .accordeon__title-img {
+  color: #00a9bd;
+}
+
+.accordeon__title:focus .accordeon__title-img,
+.accordeon__title:active .accordeon__title-img {
+  color: #00a9bd;
+  outline: transparent;
+}
+
+.accordeon__text {
+  display: none;
+  padding-right: 20px;
+}
+
+.accordeon__item.accordeon__item--active .accordeon__text {
+  display: block;
+}
+
+.accordeon__item.accordeon__item--active .accordeon__title-img {
+  transform: rotate(180deg);
+  color: #ffe093;
+}
+
+.accordeon__item:hover.accordeon__item--active .accordeon__title-img {
+  color: #00a9bd;
+}
+
+.accordeon__item:focus.accordeon__item--active .accordeon__title-img,
+.accordeon__item:active.accordeon__item--active .accordeon__title-img {
+  color: #00a9bd;
+  outline: transparent;
 }
 
 .tours__title {

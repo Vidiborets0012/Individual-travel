@@ -171,15 +171,15 @@
     justify-content: start;
   }
 
-  .questions__content {
+  /* .questions__content {
     padding-left: 0;
     background-image: none !important;
-    /* background-image: url(../images/decor-questions.svg); */
+
   }
 
   .questions__inner {
     padding-left: 0;
-  }
+  } */
 
   .tours__info-item {
     padding-left: 40px;
@@ -222,7 +222,7 @@
     opacity: 1;
   }
 
-  .questions__content {
+  /* .questions__content {
     gap: 20px;
   }
 
@@ -233,7 +233,7 @@
 
   .questions__text {
     font-size: 18px;
-  }
+  } */
 
   .tours__list {
     flex-direction: column;
@@ -415,12 +415,12 @@
     padding: 20px 0;
   }
 
-  .questions__subtitle {
+  /* .questions__subtitle {
     margin-bottom: 10px;
     font-size: 18px;
   }
 
   .questions__text {
     font-size: 16px;
-  }
+  } */
 }
