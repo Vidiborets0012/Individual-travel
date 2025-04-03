@@ -716,6 +716,7 @@ body {
 
 .tours__info {
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 55px;
   padding: 0 23px;
@@ -740,10 +741,14 @@ body {
 }
 
 .tours__info-list {
-  display: flex;
+  display: none;
   justify-content: space-between;
   gap: 100px;
   flex-grow: 1;
+}
+
+.tours__item--active .tours__info-list {
+  display: flex;
 }
 
 .tours__info-item {
