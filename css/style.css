@@ -564,7 +564,8 @@ body {
 }
 
 .swiper {
-  max-width: 1470px;
+  max-width: 1640px;
+  padding: 0 85px;
 }
 
 .swiper-button-prev::after,
@@ -613,6 +614,7 @@ body {
 
 .swiper-slide__img {
   border-radius: 25px;
+  height: auto;
 }
 
 .swiper-pagination {
