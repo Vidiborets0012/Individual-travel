@@ -171,15 +171,17 @@
     justify-content: start;
   }
 
-  /* .questions__content {
-    padding-left: 0;
-    background-image: none !important;
-
+  .questions {
+    padding: 50px 0;
   }
 
-  .questions__inner {
-    padding-left: 0;
-  } */
+  .questions__bg-inner {
+    display: none;
+  }
+
+  .accordeon {
+    gap: 20px;
+  }
 
   .tours__info-item {
     padding-left: 40px;
@@ -222,18 +224,17 @@
     opacity: 1;
   }
 
-  /* .questions__content {
-    gap: 20px;
+  .accordeon {
+    gap: 8px;
   }
 
-  .questions__subtitle {
-    margin-bottom: 12px;
+  .accordeon__title-text {
     font-size: 24px;
   }
 
-  .questions__text {
+  .accordeon__text {
     font-size: 18px;
-  } */
+  }
 
   .tours__list {
     flex-direction: column;
@@ -415,12 +416,19 @@
     padding: 20px 0;
   }
 
-  /* .questions__subtitle {
+  .accordeon {
+    gap: 10px;
+  }
+
+  .accordeon__title {
     margin-bottom: 10px;
+  }
+
+  .accordeon__title-text {
     font-size: 18px;
   }
 
-  .questions__text {
+  .accordeon__text {
     font-size: 16px;
-  } */
+  }
 }
