@@ -134,6 +134,16 @@
   .accommodation__box-title {
     font-size: 24px;
   }
+
+  .questions__content {
+    padding-left: 0;
+    background-image: none !important;
+    /* background-image: url(../images/decor-questions.svg); */
+  }
+
+  .questions__inner {
+    padding-left: 0;
+  }
 }
 
 @media (max-width: 768px) {
@@ -150,6 +160,19 @@
 
   .swiper-pagination-bullet-active {
     background-color: #00a9bd;
+  }
+
+  .questions__content {
+    gap: 20px;
+  }
+
+  .questions__subtitle {
+    margin-bottom: 12px;
+    font-size: 24px;
+  }
+
+  .questions__text {
+    font-size: 18px;
   }
 }
 
@@ -278,5 +301,14 @@
 
   .footer {
     padding: 20px 0;
+  }
+
+  .questions__subtitle {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+
+  .questions__text {
+    font-size: 16px;
   }
 }
