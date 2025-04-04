@@ -1,9 +1,13 @@
 const menuBtn = document.querySelector('.menu__btn');
 const menu = document.querySelector('.menu');
 
+const bodyLock = document.querySelector('body');
+
 menuBtn.addEventListener('click', () => {
   menu.classList.toggle('menu--active');
   menuBtn.blur();
+
+  bodyLock.classList.toggle('lock');
 });
 
 const swiper = new Swiper('.swiper', {
